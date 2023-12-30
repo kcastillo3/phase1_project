@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitlist - Top Artists</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="Hitlist Logo.png" alt="Hitlist Logo" class="site-logo">
+            <h1>Hitlist</h1>
+        </div>
+    </header>
+
+    <nav class="artists-nav">
+        <div class="artists">
+            <!-- Artist items will be dynamically inserted here -->
+        </div>
+    </nav>
+
+    <main id="artistDetails" class="content">
+        <section class="artist-info">
+            <!-- Artist details will be dynamically filled based on the selected artist -->
+        </section>
+        
+        <!-- Comments section -->
+        <section class="comments-section">
+            <h3>Comments</h3>
+            <div class="existing-comments">
+                <!-- Dynamically generated comments from the DB JSON will be inserted here -->
+            </div>
+            <div class="new-comment">
+                <textarea id="commentInput" placeholder="Leave a comment..."></textarea>
+                <button id="submitComment" class="submit-comment">Submit Comment</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hitlist. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
