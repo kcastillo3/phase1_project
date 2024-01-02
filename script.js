@@ -33,18 +33,24 @@ function updateArtistDetails(artist) {
     artistImage.alt = artist.name;
     artistInfoSection.appendChild(artistImage);
 
+// Artists Name
     const artistName = document.createElement('h2');
     artistName.textContent = artist.name;
     artistInfoSection.appendChild(artistName);
 
+// Artists Description
     const artistDescription = document.createElement('p');
     artistDescription.textContent = artist.description;
     artistInfoSection.appendChild(artistDescription);
 
-    const audioPlayer = document.createElement('audio');
-    audioPlayer.controls = true;
-    audioPlayer.src = artist.soundcloudUrl;
-    artistInfoSection.appendChild(audioPlayer);
+    // Embedding the SoundCloud track using iframe
+    const iframe = document.createElement('iframe');
+    iframe.style.width = "40%";
+    iframe.style.height = "166px"; // Adjust height as needed
+    iframe.frameBorder = "0";
+    iframe.allow = "autoplay";
+    iframe.src = `https://w.soundcloud.com/player/?url=${artist.soundcloudUrl}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
+    artistInfoSection.appendChild(iframe);
 
     // Highlight the selected artist
     document.querySelectorAll('.artist-item').forEach(item => {

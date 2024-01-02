@@ -33,25 +33,25 @@ h1 {
     background-color: #282828;
     padding: 20px 0;
     display: flex;
-    justify-content: center; /* Center the artist items */
+    justify-content: center; 
     overflow-x: auto;
 }
  
 .artist-item {
-    display: inline-flex; /* Changed to flex to center image and text */
+    display: inline-flex; 
     flex-direction: column;
     align-items: center;
-    margin: 0 20px; /* Increased spacing */
+    margin: 0 20px; 
     cursor: pointer;
 }
  
 .artist-item img {
-    width: 100px; /* Increased size for better visibility */
+    width: 100px; 
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid transparent; /* Added border for selected effect */
-    transition: border-color 0.3s; /* Smooth transition for hover effect */
+    border: 3px solid transparent; 
+    transition: border-color 0.3s; 
 }
  
 .artist-item.selected img {
@@ -70,13 +70,13 @@ h1 {
     margin-bottom: 20px;
     border-radius: 8px;
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Distribute space between elements */
+    align-items: column;
+    justify-content: center; 
 }
  
 .artist-info img {
-    width: 120px; /* Adjust to your preferred size */
-    height: 120px; /* Maintain aspect ratio */
+    width: 120px; 
+    height: 120px; 
     border-radius: 50%;
     margin-right: 20px;
     object-fit: cover;

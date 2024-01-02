@@ -1,45 +1,60 @@
 {
-    "artists": [
-      {
-        "id": 1,
-        "name": "Taylor Swift",
-        "description": "Taylor Swift is an American singer-songwriter known for her narrative songwriting.",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.3uiPBD5WCmg7wKqM0vSbjQHaKk%26pid%3DApi&f=1&ipt=ab96ad07cb1a9744293c87fbdb9b19af6dddd67f41eaa75c4c6d229071cdace7&ipo=images",
-        "soundcloudUrl": "https://soundcloud.com/taylorswiftofficial/cruel-summer",
-        "comments": ["Iconic songs!", "Amazing artist."]
-      },
-      {
-        "id": 2,
-        "name": "Drake",
-        "description": "Drake is a Canadian rapper, singer, and songwriter, known for his introspective songwriting.",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.hT20TgY9iBqWEk1MBaz8yAHaE7%26pid%3DApi&f=1&ipt=dcb4b2d9ee235ff72aa58857eeed61cb35b39165a8920efc65b173c2b8d0da92&ipo=images",
-        "soundcloudUrl": "https://soundcloud.com/octobersveryown/drake-idgaf-feat-yeat",
-        "comments": ["Incredible lyrics.", "So versatile!"]
-      },
-      {
-        "id": 3,
-        "name": "Morgan Wallen",
-        "description": "Morgan Wallen is an American country music artist, known for his distinctive voice.",
-        "image": "https://static.billboard.com/files/2021/01/Morgan-Wallen-cr-John-Shearer-2021-billboard-1548-1610650954-compressed.jpg",
-        "soundcloudUrl": "https://soundcloud.com/morgan-wallen/last-night",
-        "comments": ["Great country music!", "Heartfelt songs."]
-      },
-      {
-        "id": 4,
-        "name": "Luke Combs",
-        "description": "Luke Combs is a country music singer and songwriter, known for his rich, baritone voice.",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.SGwBvMEsw8Zd_DV-WPxkWwHaE8%26pid%3DApi&f=1&ipt=7b8d98086ac8b38a58eb04aef0e47a6e482d727ef692b4804a6eed4537c485f6&ipo=images",
-        "soundcloudUrl": "https://soundcloud.com/lukecombs/fast-car",
-        "comments": ["A true country star.", "Love his music!"]
-      },
-      {
-        "id": 5,
-        "name": "SZA",
-        "description": "SZA is an American R&B singer known for her unique, soulful voice and emotive lyrics.",
-        "image": "https://epmgaa.media.clients.ellingtoncms.com/img/photos/2019/05/06/SZA_California.jpg",
-        "soundcloudUrl": "https://soundcloud.com/szababy2/kill-bill",
-        "comments": ["Amazing vocal talent.", "So soulful and deep."]
-      }
-    ]
-  }
-  
+  "artists": [
+    {
+      "id": 1,
+      "name": "Taylor Swift",
+      "description": "Taylor Swift is an American singer-songwriter known for her narrative songwriting.",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.3uiPBD5WCmg7wKqM0vSbjQHaKk%26pid%3DApi&f=1&ipt=ab96ad07cb1a9744293c87fbdb9b19af6dddd67f41eaa75c4c6d229071cdace7&ipo=images",
+      "soundcloudUrl": "https://soundcloud.com/taylorswiftofficial/cruel-summer",
+      "comments": [
+        "Iconic songs!",
+        "Amazing artist."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Drake",
+      "description": "Drake is a Canadian rapper, singer, and songwriter, known for his introspective songwriting.",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.hT20TgY9iBqWEk1MBaz8yAHaE7%26pid%3DApi&f=1&ipt=dcb4b2d9ee235ff72aa58857eeed61cb35b39165a8920efc65b173c2b8d0da92&ipo=images",
+      "soundcloudUrl": "https://soundcloud.com/octobersveryown/drake-idgaf-feat-yeat",
+      "comments": [
+        "Incredible lyrics.",
+        "So versatile!"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Morgan Wallen",
+      "description": "Morgan Wallen is an American country music artist, known for his distinctive voice.",
+      "image": "https://static.billboard.com/files/2021/01/Morgan-Wallen-cr-John-Shearer-2021-billboard-1548-1610650954-compressed.jpg",
+      "soundcloudUrl": "https://soundcloud.com/morgan-wallen/last-night",
+      "comments": [
+        "Great country music!",
+        "Heartfelt songs."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Luke Combs",
+      "description": "Luke Combs is a country music singer and songwriter, known for his rich, baritone voice.",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.SGwBvMEsw8Zd_DV-WPxkWwHaE8%26pid%3DApi&f=1&ipt=7b8d98086ac8b38a58eb04aef0e47a6e482d727ef692b4804a6eed4537c485f6&ipo=images",
+      "soundcloudUrl": "https://soundcloud.com/lukecombs/fast-car",
+      "comments": [
+        "A true country star.",
+        "Love his music!",
+        "Cooment"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "SZA",
+      "description": "SZA is an American R&B singer known for her unique, soulful voice and emotive lyrics.",
+      "image": "https://epmgaa.media.clients.ellingtoncms.com/img/photos/2019/05/06/SZA_California.jpg",
+      "soundcloudUrl": "https://soundcloud.com/szababy2/kill-bill",
+      "comments": [
+        "Amazing vocal talent.",
+        "So soulful and deep."
+      ]
+    }
+  ]
+}
