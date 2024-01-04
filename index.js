@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch artist data from the JSON file
-    async function fetchArtistData() {
-        try {
-            const response = await fetch('db.json');
-            const data = await response.json();
-            return data.artists;
-        } catch (error) {
-            console.error('Error fetching artist data:', error);
-            return [];
-        }
-    }
+    fetch('http://localhost:3000/artists')
+     .then(response => response.json())
+     .then(artists => {
+       populateArtistNav(artists);
+       if (artists.length > 0) {
+         updateArtistDetails(artists[0]); // Display the first artist by default
+       }
+     })
+     .catch(error => console.error('Error fetching artists:', error));
+});
 
     // Function to render artists in the navigation
     function renderArtists(artists) {
@@ -88,4 +88,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fetch artist data and render on page load
     fetchArtistData().then(artists => renderArtists(artists));
-});
+
