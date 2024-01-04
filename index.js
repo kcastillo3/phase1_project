@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('http://localhost:3000/artists')
      .then(response => response.json())
      .then(artists => {
-       populateArtistNav(artists);
+       renderArtists(artists);
        if (artists.length > 0) {
-         updateArtistDetails(artists[0]); // Display the first artist by default
+         showArtistDetails(artists[0]); // Display the first artist by default
        }
      })
      .catch(error => console.error('Error fetching artists:', error));
