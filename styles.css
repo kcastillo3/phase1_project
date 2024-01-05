@@ -97,7 +97,12 @@ h1 {
 .artist-info h2{
     margin-bottom: 15px;
 }
- 
+
+.artist-genre {
+    font-size: 1.1em; 
+    font-weight: bold; 
+}
+
 .artist-info p{
     margin-top: 15px;
     white-space: normal;
