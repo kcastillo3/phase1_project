@@ -108,7 +108,8 @@ function updateArtistDetails(artist) {
     });
 }
 
-document.getElementById('submitComment').addEventListener('click', () => {
+document.getElementById('submitComment').addEventListener('click', (event) => {
+    event.preventDefault(); //to stop page from refreshing with each comment
     const commentInput = document.getElementById('commentInput');
     const newComment = commentInput.value.trim();
     if (newComment) {
