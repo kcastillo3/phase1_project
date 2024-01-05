@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //Function to fetch artist data
     fetch('http://localhost:3000/artists')
      .then(response => response.json())
      .then(artists => {
@@ -10,6 +11,32 @@ document.addEventListener('DOMContentLoaded', () => {
      .catch(error => console.error('Error fetching artists:', error));
 });
 
+//Function to render artists in the navigation
+function renderArtists(artists) {
+    const artistsContainer = document.querySelector('.artists');
+
+    artists.forEach(artist => {
+        const artistItem = document.createElement('div');
+        artistItem.classList.add('artist-item');
+        artistItem.innerText = artist.name;
+
+        artistItem.addEventListener('mouseover', () => handleMouseOver(artistItem));
+        artistItem.addEventListener('mouseleave', () => handleMouseLeave(artistItem));
+
+        artistItem.addEventListener('click', () => showArtistDetails(artist));
+
+        artistsContainer.appendChild(artistItem);
+    });
+}
+
+function handleMouseOver(element) {
+    element.classList.add('hover-ring');
+}
+
+function handleMouseLeave(element) {
+    element.classList.remove('hover-ring');
+}
+
 function populateArtistNav(artists) {
     const nav = document.querySelector('.artists-nav .artists');
     nav.innerHTML = ''; // Clear existing artist elements
@@ -19,15 +46,25 @@ function populateArtistNav(artists) {
         artistDiv.dataset.artistId = artist.id;
         artistDiv.innerHTML = `<img src="${artist.image}" alt="${artist.name}" />`;
         artistDiv.addEventListener('click', () => updateArtistDetails(artist));
+        artistDiv.addEventListener('mouseover', () => handleMouseOver(artistDiv));
+        artistDiv.addEventListener('mouseleave', () => handleMouseLeave(artistDiv));
         nav.appendChild(artistDiv);
     });
+}
+
+function handleMouseOver(element){
+    element.classList.add('hover-ring');
+}
+
+function handleMouseLeave(element){
+    element.classList.remove('hover-ring');
 }
 
 function updateArtistDetails(artist) {
     const artistInfoSection = document.querySelector('.artist-info');
     artistInfoSection.innerHTML = ''; // Clear the artist info section
 
-    // Create new elements for the artist's details
+// Create new elements for the artist's details
     const artistImage = document.createElement('img');
     artistImage.src = artist.image;
     artistImage.alt = artist.name;
